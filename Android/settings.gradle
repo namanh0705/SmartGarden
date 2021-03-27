@@ -1,0 +1,2 @@
+include ':app', ':esptouch'
+rootProject.name='Firebasetest'

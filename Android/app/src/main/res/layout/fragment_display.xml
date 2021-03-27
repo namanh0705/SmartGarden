@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone4"
+    tools:context=".fragment.DisplayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+                <LinearLayout>
+                    <Space
+                        android:layout_width="@dimen/auto_dp_10"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/background_gardient"
+                        android:gravity="center"
+                        android:text="@string/Light"
+                        android:textColor="#ffff"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="@dimen/auto_dp_30"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/background_gardient"
+                        android:gravity="center"
+                        android:text="@string/Temperature"
+                        android:textColor="#ffff"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="@dimen/auto_dp_15"
+                    android:layout_height="@dimen/auto_dp_15" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="45dp"
+                    android:background="@color/red">
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/anhsang"
+                            android:layout_width="90dp"
+                            android:layout_height="@dimen/auto_dp_30"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#FFE300"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="@dimen/auto_dp_15"
+                    android:layout_height="@dimen/auto_dp_15" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="@dimen/auto_dp_20"
+                        android:layout_margin="20dp">
+                        <pl.pawelkleczkowski.customgauge.CustomGauge
+                            android:id="@+id/gauge2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            app:gaugePointEndColor="@color/red2"
+                            app:gaugePointStartColor="@color/red2"
+                            app:gaugeStartAngle="135"
+                            app:gaugeStrokeCap="ROUND"
+                            app:gaugeStrokeColor="@color/gray_300"
+                            app:gaugeStrokeWidth="7dp"
+                            app:gaugeSweepAngle="270" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="40dp"
+                            android:textColor="@color/red"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout>
+                <Space
+                    android:layout_width="@dimen/auto_dp_10"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/background_gardient"
+                    android:gravity="center"
+                    android:text="@string/Air_Humidity"
+                    android:textColor="#ffff"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="@dimen/auto_dp_30"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/background_gardient"
+                    android:gravity="center"
+                    android:text="@string/Soil_Moisture"
+                    android:textColor="#ffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout>
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/auto_dp_15" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="20dp">
+
+
+                    <az.plainpie.PieView
+                        android:id="@+id/pieView_hum"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        tools:ignore="MissingConstraints" />
+                </androidx.cardview.widget.CardView>
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="20dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_margin="20dp">
+
+                    <az.plainpie.PieView
+                        android:id="@+id/pieView_soil"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        tools:ignore="MissingConstraints" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_height="@dimen/auto_dp_50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_gardient"
+                    android:gravity="center"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Status_machine"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout android:layout_marginTop="@dimen/auto_dp_5">
+
+                <TableRow>
+                    <Space
+                        android:layout_width="40dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/btnfan11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/fan_status"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/auto_dp_20" />
+                    <ImageView
+                        android:id="@+id/btnfan22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/fan2_status"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/auto_dp_20" />
+
+
+                </TableRow>
+                <TableRow>
+                    <Space
+                        android:layout_height="@dimen/auto_dp_10"
+                        android:layout_width="@dimen/auto_dp_20">
+
+                    </Space>
+                </TableRow>
+
+                <TableRow>
+                    <Space
+                        android:layout_width="2dp"/>
+
+                    <ImageView
+                        android:id="@+id/btnpump1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/pump_status"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/auto_dp_20"
+                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/btnmist1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/mis_status"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/auto_dp_20" />
+
+
+                </TableRow>
+                <TableRow>
+                    <Space
+                        android:layout_height="@dimen/auto_dp_10"
+                        android:layout_width="@dimen/auto_dp_20">
+
+                    </Space>
+                </TableRow>
+                <TableRow>
+                    <Space
+                        android:layout_width="40dp"/>
+
+                    <ImageView
+                        android:id="@+id/btnlamp1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/white"/>
+                    <ImageView
+                        android:id="@+id/lamp_status"
+                        android:layout_width="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/auto_dp_20" />
+                </TableRow>
+
+
+
+
+
+            </TableLayout>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

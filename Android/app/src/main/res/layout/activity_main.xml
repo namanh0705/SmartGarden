@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_0"
+            android:layout_weight="1"
+            android:background="@drawable/background_gardient"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/auto_dp_20"
+        android:layout_marginLeft="@dimen/auto_dp_20"
+        android:orientation="vertical"
+        android:padding="@dimen/auto_dp_20"
+        android:background="@drawable/shape_white_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Smart IOT"
+            android:textAllCaps="true"
+            android:textColor="#E91E63"
+            android:textSize="@dimen/auto_dp_35"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+        <Button
+            android:id="@+id/changelan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_40"
+            android:background="@drawable/shape_blue_border"
+            android:text="@string/Change_Language"
+            android:textSize="@dimen/auto_sp_14"
+            android:layout_marginTop="@dimen/auto_dp_50"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/wifi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_40"
+            android:background="@drawable/shape_blue_border"
+            android:text="@string/Connect_wifi"
+            android:textSize="@dimen/auto_sp_14"
+            android:layout_marginTop="@dimen/auto_dp_10"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_40"
+            android:background="@drawable/shape_blue_border"
+            android:text="@string/register"
+            android:textSize="@dimen/auto_sp_14"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_40"
+            android:layout_marginTop="@dimen/auto_dp_10"
+            android:background="@drawable/shape_blue_border"
+            android:text="@string/login"
+            android:textSize="@dimen/auto_sp_14"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/auto_dp_20"
+        android:layout_marginRight="@dimen/auto_dp_20"
+        android:orientation="vertical"
+        android:padding="@dimen/auto_dp_20"/>
+
+
+</RelativeLayout>

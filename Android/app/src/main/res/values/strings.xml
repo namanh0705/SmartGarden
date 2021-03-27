@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">Smart Farm</string>
+    <string name="home">Hoạt động</string>
+    <string name="message">Tin nhắn</string>
+    <string name="profile">Cá nhân</string>
+    <string name="user">Người dùng</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="post_action">Đăng hoạt động</string>
+    <string name="online">online</string>
+    <string name="ofline">offline</string>
+    <string name="enter_message">Đang nhập tin nhắn....</string>
+    <string name="name">Trung Kiên</string>
+    <string name="enter_the_message">Nhập tin nhắn....</string>
+    <string name="recover_pass">Quên mật khẩu? Khôi phục</string>
+    <string name="not_have_account">Bạn chưa có tài khoản? Tạo tài khoản?</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register">Tạo tài khoản</string>
+    <string name="email">Email....</string>
+    <string name="password">Mật khẩu</string>
+    <string name="question_login">Bạn đã có tài khoản chưa? Đăng nhập?</string>
+    <string name="hello">Hello</string>
+    <string name="custom_time">31/10/2019 7:00PM</string>
+    <string name="seen">Đã xem</string>
+    <string name="send">Đã gửi</string>
+    <string name="description">Hello, chào tất cả mọi người</string>
+    <string name="number_like">1k likes</string>
+    <string name="like">Thích</string>
+    <string name="liked">Đã thích</string>
+    <string name="comment">Bình luận</string>
+    <string name="share">Chia sẻ</string>
+    <string name="user_mail">kientran26070809@gmail.com</string>
+    <string name="say_something">Nói gì đó đi</string>
+    <string name="send_empty_mes">Không thể gửi tin nhắn trống....</string>
+    <string name="error_speech_to_text">Lấy làm tiếc! Thiết bị của bạn không hỗ trợ nhập liệu bằng giọng nói.</string>
+    <string name="recover_password">Khôi phục mật khẩu</string>
+    <string name="recover">Khôi phục</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="comment_add">Đã gửi bình luận....</string>
+    <string name="txt_camera">Vui lòng bật máy ảnh và cho phép lưu trữ</string>
+    <string name="txt_storage">Vui lòng cho phép lưu trữ</string>
+    <string name="edit_profile">Chỉnh sửa ảnh đại diện</string>
+    <string name="edit_cover">Chỉnh sửa ảnh bìa</string>
+    <string name="edit_name">Chỉnh sửa tên</string>
+    <string name="edit_phone">Chỉnh sửa số điện thoại</string>
+    <string name="update_profile">Cập nhật ảnh đại diện</string>
+    <string name="update_cover">Cập nhật ảnh bìa</string>
+    <string name="update_name">Cập nhật tên</string>
+    <string name="update_phone">Cập nhật số điện thoại</string>
+    <string name="update">Cập nhật</string>
+    <string name="camera">Máy ảnh</string>
+    <string name="album">Album</string>
+    <string name="pick_image">Chọn hình ảnh từ</string>
+    <string name="error_update_profile">Lỗi cập nhật ảnh đại diện</string>
+    <string name="some_error">Một số lỗi xảy ra</string>
+    <string name="choice_action">Chọn hoạt động</string>
+    <string name="image_profile">Ảnh đại diện</string>
+    <string name="image_cover">Ảnh bìa</string>
+    <string name="authentication_failed">Quá trình xác thực thất bại</string>
+    <string name="delete">Xóa bài viết</string>
+    <string name="hint_email">Email</string>
+    <string name="send_email">Gửi tới email</string>
+    <string name="lenght_pass">Mật khẩu phải dài hơn 6</string>
+    <string name="invalid_email">Email không hợp lệ</string>
+    <string name="update_post">Cập nhật bài</string>
+    <string name="add_new_post">Thêm bài mới</string>
+    <string name="upload">Tải lên</string>
+    <string name="write_comment">Viết bình luận....</string>
+    <string name="title">Đồ án tốt nghiệp</string>
+    <string name="subTitle">Diêm Đình Phong</string>
+    <string name="setting">Cài đặt</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="email_send">Gửi tới email</string>
+    <string name="question_logout">Bạn muốn đăng xuất tài khoản này?</string>
+    <string name="edit">Chỉnh sửa hoạt động</string>
+    <string name="view_detail">Xem chi tiết</string>
+    <string name="question_delete_action">Xóa hoạt động này?</string>
+    <string name="err_login">Tài khoản hoặc mật khẩu không đúng vui lòng nhập lại!</string>
+    <string name="welcome">Welcome my project</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="switch1">Switch 1</string>
+    <string name="switch2">Switch 2</string>
+    <string name="btnsubmit">Submit</string>
+    <string name="menu_item_about">About App</string>
+    <string name="about_app_version">App Version: %s</string>
+    <string name="about_esptouch_version" translatable="false">EspTouch Version: %s</string>
+    <string name="ssid_title">SSID: </string>
+    <string name="bssid_title">BSSID: </string>
+    <string name="password_title">Password: </string>
+    <string name="device_count_title">Device count: </string>
+    <string name="package_broadcast">Broadcast</string>
+    <string name="package_multicast">Multicast</string>
+    <string name="confirm">Confirm</string>
+    <string name="wifi_5g_message">Device don\'t support 5G Wifi, please make sure the currently connected Wifi is 2.4G</string>
+    <string name="location_disable_message">Location(GPS) is disable</string>
+    <string name="no_wifi_connection">No Wifi connection</string>
+    <string name="configuring_message">Esptouch is configuring, please wait for a moment…</string>
+    <string name="configure_wifi_change_message">Wifi disconnected or changed</string>
+    <string name="configure_result_failed">EspTouch failed</string>
+    <string name="configure_result_failed_port">Create Esptouch task failed, the EspTouch port could be used by other thread</string>
+    <string name="configure_result_success">EspTouch</string>
+    <string name="configure_result_success_item">BSSID = %1$s, InetAddress = %2$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fan_limit">Ngưỡng bật quạt</string>
+    <string name="temp_greater">Nhiệt độ lớn hơn:</string>
+    <string name="lamp_limit">Ngưỡng bật đèn sưởi</string>
+    <string name="temp_smaller">Nhiệt độ nhỏ hơn:</string>
+    <string name="mis_limit">Ngưỡng bật máy phun sương</string>
+    <string name="hum_smaller">Độ ẩm không khí nhỏ hơn:</string>
+    <string name="pump_limit">Ngưỡng bật máy bơm</string>
+    <string name="soil_smaller">Độ ẩm đất nhỏ hơn:</string>
+    <string name="manual">Điều khiển bằng tay</string>
+    <string name="machine">Thiết bị</string>
+    <string name="status">Trạng thái</string>
+    <string name="parameter">Thông số</string>
+    <string name="alarm">Chế độ hẹn giờ</string>
+    <string name="pump_alarm">Máy bơm</string>
+    <string name="pump_time1">Lần1</string>
+    <string name="pump_time2">Lần2</string>
+    <string name="lamp_alarm">Đèn sưởi</string>
+    <string name="lamp_time1">Lần1</string>
+    <string name="lamp_time2">Lần2</string>
+    <string name="fan_alarm">Quạt</string>
+    <string name="fan_time1">Lần1</string>
+    <string name="fan_time2">Lần2</string>
+    <string name="fan2">Quạt hút</string>
+    <string name="fan2_time1">Lần1</string>
+    <string name="fan2_time2">Lần2</string>
+    <string name="mis_alarm">Máy phun sương</string>
+    <string name="mis_time1">Lần1</string>
+    <string name="mis_time2">Lần2</string>
+    <string name="Light">Ánh sáng</string>
+    <string name="Temperature">Nhiệt độ</string>
+    <string name="Shine">Trời sáng</string>
+    <string name="Air_Humidity">Độ ẩm không khí</string>
+    <string name="Soil_Moisture">Độ ẩm đất</string>
+    <string name="Status_machine">Trạng thái thiết bị</string>
+    <string name="Fan_1">Quạt</string>
+    <string name="pumpStatus">Máy bơm</string>
+    <string name="Mis_status">Máy phun sương</string>
+    <string name="fan22">Quạt hút</string>
+    <string name="display">Hiển thị</string>
+    <string name="control">Điều khiển</string>
+    <string name="chart">Biểu đồ</string>
+    <string name="logout2">Đăng xuất</string>
+    <string name="Connect_wifi">Kết nối wifi</string>
+    <string name="Change_Language">Thay đổi ngôn ngữ</string>
+    <string name="Automation">Chế độ tự động</string>
+    <string name="Lamp_status">Đèn</string>
+
+
+    <string name="empty_view_text">Press the Floating Action Button to add an alarm!</string>
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">Time</string>
+    <string name="label">Label</string>
+    <string name="days">Days</string>
+    <string name="edit_alarm">Edit Alarm</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="add_label_hint">Add a label!</string>
+    <string name="update_complete">Changes Saved</string>
+    <string name="update_failed">Update Failed</string>
+    <string name="delete_complete">Alarm Deleted</string>
+    <string name="delete_failed">Delete Failed</string>
+    <string name="delete_dialog_title">Confirm Delete Alarm</string>
+    <string name="delete_dialog_content">Are you sure you would like to delete this alarm?</string>
+    <string name="yes1">Ye1s</string>
+    <string name="no1">N1o</string>
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Alarm Landing Page Activity/Fragment -->
+    <string name="launch_main_activity">Launch Main Activity</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!-- Days -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Notification -->
+
+    <!-- Notification -->
+    <string name="channel_name">Simple Alarms</string>
+    <string name="TimeAlarm">Thời gian</string>
+</resources>

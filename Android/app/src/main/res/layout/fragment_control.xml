@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ControlFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_gardient">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Automation"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <Switch
+                    android:id="@+id/switch_AutoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/auto_dp_20"
+                    android:focusable="false"
+                    android:textSize="30sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:text="@string/fan_limit"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:textColor="#FA0000" />
+            </TableRow>
+
+            <LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/control_volume"
+                    android:text="@string/temp_greater"
+                    android:textColor="#000000" />
+
+                <SeekBar
+                    android:id="@+id/see1"
+                    android:layout_width="190dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/control_volume" />
+            </LinearLayout>
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:text="@string/lamp_limit"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:textColor="#FF0000" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/temp_smaller"
+                    android:textColor="#000000" />
+
+                <SeekBar
+                    android:id="@+id/see2"
+                    android:layout_width="190dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/control_volume" />
+            </LinearLayout>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:text="@string/mis_limit"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:textColor="#FF0000" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/hum_smaller"
+                    android:textColor="#000000" />
+
+                <SeekBar
+                    android:id="@+id/see3"
+                    android:layout_width="190dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:progressDrawable="@drawable/control_volume" />
+
+            </LinearLayout>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:text="@string/pump_limit"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:textColor="#FF0000" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:text="@string/soil_smaller"
+                    android:textColor="#000000" />
+
+                <SeekBar
+                    android:id="@+id/see4"
+                    android:layout_width="190dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:progressDrawable="@drawable/control_volume" />
+            </LinearLayout>
+
+            <TableRow android:background="@drawable/background_gardient">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manual"
+                    android:textColor="#ffff"
+                    android:textSize="30sp" />
+
+                <Switch
+                    android:id="@+id/switch_ManualMode"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/auto_dp_20"
+                    android:focusable="false"
+                    android:textSize="30sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+            </TableRow>
+
+            <TableLayout>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/auto_dp_30"
+                        android:layout_gravity="center"
+                        android:text="@string/machine"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="@dimen/auto_dp_150"
+                        android:layout_height="@dimen/auto_dp_30"
+                        android:layout_gravity="center"
+                        android:text="@string/status"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/auto_dp_30"
+                        android:layout_gravity="center"
+                        android:text="@string/parameter"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="43dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ligh" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_track" />
+
+                    <TextView
+                        android:id="@+id/den1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/auto_dp_15"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/fan1"
+                        android:layout_width="43dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fan11tran" />
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="@dimen/auto_dp_50"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_track" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/fan2"
+                        android:layout_width="43dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fan22tran" />
+
+                    <Switch
+                        android:id="@+id/switch9"
+                        android:layout_width="@dimen/auto_dp_50"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_track" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/pumptr"
+                        android:layout_width="43dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/pumptran" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="@dimen/auto_dp_50"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_track" />
+
+                    <TextView
+                        android:id="@+id/bomnuoc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/auto_dp_15"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/mist"
+                        android:layout_width="43dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/misttran" />
+
+                    <Switch
+                        android:id="@+id/switch5"
+                        android:layout_width="@dimen/auto_dp_50"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_track" />
+
+                    <TextView
+                        android:id="@+id/phunsuong1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/auto_dp_15"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:background="@drawable/background_gardient">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm"
+                    android:textColor="#ffff"
+                    android:textSize="30sp" />
+
+                <Switch
+                    android:id="@+id/swalarm"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="@dimen/auto_dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/auto_dp_20"
+                    android:focusable="false"
+                    android:textSize="30dp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bluelow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pump_alarm"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pump_time1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/pumphourlan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/pumpmintuelan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetpumplan1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="set" />
+
+                <Switch
+                    android:id="@+id/swpumplan1"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pump_time2"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/pumphourlan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/pumpmintuelan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetpumplan2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="set" />
+
+                <Switch
+                    android:id="@+id/swpumplan2"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bluelow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lamp_alarm"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lamp_time1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/lamphourlan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/lampmintuelan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetlamplan1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swlamplan1"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lamp_time2"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/lamphourlan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/lampmintuelan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetlamplan2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swlamplan2"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bluelow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan_alarm"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan_time1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/fanhourlan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/fanmintuelan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetfanlan1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swfanlan1"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan_time2"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/fanhourlan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/fanmintuelan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetfanlan2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swfanlan2"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bluelow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan2"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan2_time1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/fan2hourlan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/fan2mintuelan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetfan2lan1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swfan2lan1"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan2_time2"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/fan2hourlan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/fan2mintuelan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetfan2lan2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swfan2lan2"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bluelow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mis_alarm"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mis_time1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/mishourlan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/mismintuelan1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetmislan1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swmislan1"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mis_time2"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/mishourlan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <EditText
+                    android:id="@+id/mismintuelan2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnsetmislan2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Set" />
+
+                <Switch
+                    android:id="@+id/swmislan2"
+                    android:layout_width="@dimen/auto_dp_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/rectangle_thumb"
+                    android:track="@drawable/rectangle_track" />
+
+            </LinearLayout>
+
+
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

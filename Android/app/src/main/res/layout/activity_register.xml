@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="onClickBack"
+            type="android.view.View.OnClickListener"
+            />
+
+        <variable
+            name="onClickRegister"
+            type="android.view.View.OnClickListener"
+            />
+
+        <variable
+            name="onClickHaveAccount"
+            type="android.view.View.OnClickListener"
+            />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_0"
+                android:layout_weight="1"
+                android:background="@drawable/background_gardient"
+                tools:ignore="ContentDescription"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_dp_20"
+            android:layout_marginRight="@dimen/auto_dp_20"
+            android:background="@drawable/shape_white_border"
+            android:orientation="vertical"
+            android:padding="@dimen/auto_dp_20"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="#E91E63"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/auto_dp_30"
+                android:padding="@dimen/auto_dp_4"
+                android:textSize="@dimen/auto_sp_14"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="@dimen/auto_sp_14"
+                    tools:text="kientran26070809@gmail.com"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/auto_dp_4"
+                android:textSize="@dimen/auto_sp_14"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="@dimen/auto_sp_14"
+                    tools:text="123****"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_40"
+                android:layout_marginTop="@dimen/auto_dp_30"
+                android:background="@drawable/shape_blue_border"
+                android:onClick="@{onClickRegister}"
+                android:padding="@dimen/auto_dp_4"
+                android:text="@string/register"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/auto_sp_14"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:id="@+id/have_accountTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dp_10"
+                android:onClick="@{onClickHaveAccount}"
+                android:text="@string/question_login"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_3"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/auto_dp_56"
+            android:layout_height="@dimen/auto_dp_56"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="@{onClickBack}"
+            android:padding="@dimen/auto_dp_16"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+</layout>
